@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+:root {
+    --primary-color: #6C63FF;
+    --secondary-color: #FFD700;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --input-background: #fff;
+    --input-border: #ddd;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6C63FF 25%, #FFD700 75%);
+    color: var(--text-color);
+}
+
+.Signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.intro img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    width: 800px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px 10px;
+    background: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    pointer-events: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.75em;
+    color: var(--primary-color);
+}
+
+.inputBox input:focus {
+    border-color: var(--primary-color);
+}
+
+.inputBox input[type="submit"] {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+.inputBox input[type="submit"]:hover {
+    background: var(--secondary-color);
+}
+
+form p {
+    color: var(--text-color);
+    text-align: center;
+}
+
+form p a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+form p a:hover {
+    color: var(--secondary-color);
+}

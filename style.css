@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #e0ffff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#wrapper-div {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo-div {
+    width: 10%;
+}
+
+#logo-div img {
+    width: 100%;
+}
+
+.sidebar-toggle {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sidebar-toggle img {
+    width: 30px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+#nav-div {
+    display: flex;
+    gap: 30px;
+    width: 750px;
+    justify-content:flex-end;
+    align-items: center;
+    background: linear-gradient(315deg, hsla(186, 88%, 67%, 1) 0%, hsla(186, 100%, 69%, 1) 27%, hsla(187, 100%, 68%, 1) 34%, hsla(197, 100%, 64%, 1) 75%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nav-div a {
+    padding: 5px 15px;
+    transition: color 0.3s;
+}
+
+#nav-div a:hover {
+    color: #007BFF;
+}
+
+#head-div {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, hsla(201, 100%, 49%, 1) 0%, hsla(172, 60%, 59%, 1) 50%, hsla(175, 65%, 68%, 1) 100%);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#main1-div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+#sidebar-div {
+    position: fixed;
+    left: -245px; /* Initially position outside of the screen */
+    top: 0;
+    bottom: 0;
+    width: 250px; /* Set a specific width for the sidebar */
+    background: hsla(184, 82%, 51%, 1);
+
+    background: hsla(173, 89%, 70%, 1);
+
+    background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6FF7E8", endColorstr="#1F7EA1", GradientType=1 );
+    padding: 15px;
+    text-decoration: none; 
+    font-size: 13px; 
+    color: white;
+    border-radius: 0 5px 5px 0; 
+    z-index: 1000; 
+    transition: left 0.3s ease; 
+    overflow-y: auto; 
+}
+
+#sidebar-div a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 3; 
+}
+
+#sidebar-div a {
+    display: block; 
+    padding: 10px 15px; 
+    margin-bottom: 5px; 
+    color: white; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#sidebar-div img{
+    width: 150px;
+    height: auto;
+}
+
+#sidebar-div a:hover {
+    background-color: #7e86ff; 
+    color: #6c1ae8; 
+}
+
+#sidebar-div:hover {
+    left: 0; 
+}
+
+
+#content-div {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#box1-div,
+#bottom-box {
+    background: linear-gradient(90deg, hsla(280, 95%, 57%, 1) 0%, hsla(193, 90%, 55%, 1) 100%);
+    padding: 10px;
+    border-radius: 20px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+
+#box1-div img,#bottom-box img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit:scale-down;
+}
+
+button {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+
+button img {
+    width: 50px;
+    height: auto;
+    object-fit: fill;
+}
+
+
+button p {
+    text-align: left;
+    margin: 0;
+}
+
+button h2 {
+    text-align: center;
+    margin: 0;
+}
+
+/***** product 1 *****/  
+
+#product1-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product1-button {
+    position: absolute;
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+    bottom: 0;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+#product1-button .hidden {
+    display: none;
+}
+
+#product1-button:hover .product-info img,
+#product1-button:hover .product-info h2,
+#product1-button:hover .product-info p {
+    display: none;
+    object-fit:fill;
+    
+}
+
+#product1-button:hover .product-info .hidden {
+   
+    display: block;
+}
+
+#product1-button h2,
+#product1-button p {
+    margin: 10px 0;
+    color: #333;
+}
+
+#product1-button .hidden {
+   
+    color: #000000;
+}
+
+/***** product 2 *****/ 
+
+#product2-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product2-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product2-button .hidden {
+    display: none;
+}
+
+#product2-button:hover .product-info img,
+#product2-button:hover .product-info h2,
+#product2-button:hover .product-info p {
+    display: none;
+    object-fit: fill;
+}
+
+#product2-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product2-button h2,
+#product2-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product2-button .hidden {
+   
+    color: black;
+}
+
+/***** product 3 *****/ 
+#product3-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product3-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product3-button .hidden {
+    display: none;
+}
+
+#product3-button:hover .product-info img,
+#product3-button:hover .product-info h2,
+#product3-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product3-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product3-button h2,
+#product3-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product3-button .hidden {
+   
+    color: black;
+}
+
+/***** product 4 *****/ 
+#product4-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product4-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product4-button .hidden {
+    display: none;
+}
+
+#product4-button:hover .product-info img,
+#product4-button:hover .product-info h2,
+#product4-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product4-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product4-button h2,
+#product4-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product4-button .hidden {
+   
+    color: black;
+}
+
+/***** product 5 *****/ 
+#product5-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product5-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product5-button .hidden {
+    display: none;
+}
+
+#product5-button:hover .product-info img,
+#product5-button:hover .product-info h2,
+#product5-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product5-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product5-button h2,
+#product5-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product5-button .hidden {
+   
+    color: black;
+}
+
+/**** product6 ****/
+#product6-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product6-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product6-button .hidden {
+    display: none;
+}
+
+#product6-button:hover .product-info img,
+#product6-button:hover .product-info h2,
+#product6-button:hover .product-info p {
+    display: none;
+    object-fit: fill;
+}
+
+#product6-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product6-button h2,
+#product6-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product6-button .hidden {
+   
+    color: black;
+}
+
+/**** product7 ****/
+#product7-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product7-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product7-button .hidden {
+    display: none;
+}
+
+#product7-button:hover .product-info img,
+#product7-button:hover .product-info h2,
+#product7-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product7-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product7-button h2,
+#product7-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product7-button .hidden {
+   
+    color: black;
+}
+
+/**** product8****/
+#product8-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product8-button {
+    width: 350px;
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product8-button .hidden {
+    display: none;
+}
+
+#product8-button:hover .product-info img,
+#product8-button:hover .product-info h2,
+#product8-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product8-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product8-button h2,
+#product8-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product8-button .hidden {
+   
+    color: black;
+}
+
+/**** product 9 ****/
+#product9-button:hover {
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+    border-color: #007BFF;
+}
+
+#product9-button {
+    width: 350px; 
+    height: auto; 
+    position: relative;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#product9-button .hidden {
+    display: none;
+}
+
+#product9-button:hover .product-info img,
+#product9-button:hover .product-info h2,
+#product9-button:hover .product-info p {
+    display: none;
+    object-fit: cover;
+}
+
+#product9-button:hover .product-info .hidden {
+    display: block;
+}
+
+#product9-button h2,
+#product9-button p {
+    margin: 10px 0;
+   
+    color: #333;
+}
+
+#product9-button .hidden {
+   
+    color: black;
+}
+/*footer*/
+
+#footer-div {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background : linear-gradient(90deg, hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%);
+}
+
+#footer-div img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+#footer-div p {
+    display: inline;
+    margin-left: 10px;
+}

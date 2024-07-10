@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: hsla(145, 83%, 74%, 1);
+
+    background: linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(145, 83%, 74%, 1) 0%, hsla(204, 77%, 76%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87F4B5", endColorstr="#93CBF1", GradientType=1 );
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background: linear-gradient(90deg, hsla(195, 9%, 64%, 1) 0%, hsla(64, 27%, 80%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 9%, 64%, 1) 0%, hsla(64, 27%, 80%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 9%, 64%, 1) 0%, hsla(64, 27%, 80%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BA7AB", endColorstr="#D8DABF", GradientType=1);
+    color: #dde1c5;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#reviewsContainer .review {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#reviewsContainer .review img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}

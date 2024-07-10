@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="REVIEW.css">
+</head>
+<body>
+    <h1>FutureBytes: Product Review</h1>
+    
+    <form id="reviewForm">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value=""> </option>
+            <option value="⭐">Bad</option>
+            <option value="⭐⭐">Poor</option>
+            <option value="⭐⭐⭐">Average</option>
+            <option value="⭐⭐⭐⭐">Good</option>
+            <option value="⭐⭐⭐⭐⭐">Very Good</option>
+        </select>
+        
+        <label for="review">Your Experience:</label>
+        <textarea id="review" name="review" rows="4" required></textarea>
+        
+        <label for="productImage">Upload Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        
+        <button type="submit">Submit Review</button>
+    </form>
+    
+    <h2>Reviews</h2>
+    <div id="reviewsContainer"></div>
+
+    <script src="REVIEW.js"></script>
+</body>
+</html>

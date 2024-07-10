@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="BNS.css">
+</head>
+<body>
+    <h1>Future Bytes: Buy and Sell</h1>
+    
+    <form id="productForm">
+        <h2>Add Product</h2>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+        
+        <label for="productImage">Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        
+        <label for="productDescription">Product Description:</label>
+        <textarea id="productDescription" name="productDescription" required></textarea>
+
+        <label for="productPrice">Price:</label>
+        <input type="text" id="productPrice" name="productPrice" required>
+        
+        <label for="contactInfo">Contact Information:</label>
+        <input type="text" id="contactInfo" name="contactInfo" required>
+
+        <label for="locationInfo">Location:</label>
+        <input type="text" id="locationInfo" name="locationInfo" required>
+
+        <button type="submit">Add Product</button>
+    </form>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Price</th>
+                <th>Contact Information</th>
+                <th>Location</th>
+                <th>Delete item</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="BNS.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#header {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+  
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    background: hsla(235, 46%, 60%, 1);
+
+background: linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6971C7", endColorstr="#0037B6", GradientType=1 );
+    color: #ffffff;
+    text-align: center;
+    padding: -500px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: auto;
+    
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.section {
+    background: hsla(235, 100%, 78%, 1);
+
+    background: linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 72%, 62%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 72%, 62%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(235, 100%, 78%, 1) 0%, hsla(222, 72%, 62%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#919BFF", endColorstr="#5982E4", GradientType=1 );
+    color: hsla(120, 6%, 90%, 1);
+
+    background: linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(120, 6%, 90%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E4E7E4", endColorstr="#0A1647", GradientType=1 );
+    text-align: center;
+    padding: 130px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.section img{
+    width: 250px;
+    height: auto;
+}
+
+.section .logo {
+    width: 150px;
+    height: auto; 
+}
+
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.section:first-child {
+    margin-top: 0; /* Remove top margin for the first section */
+}
+
+.footer {
+    background: hsla(235, 46%, 60%, 1);
+
+    background: linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(235, 46%, 60%, 1) 0%, hsla(222, 100%, 36%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6971C7", endColorstr="#0037B6", GradientType=1 );
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+   
+    border-radius: 8px 8px 0 0; /* Rounded corners only on top */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #d4d413;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #e8491d;
+}
