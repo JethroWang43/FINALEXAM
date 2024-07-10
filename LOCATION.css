@@ -18,6 +18,23 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F64C18", en
     padding: 20px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#logo-div {
+    margin-right: 20px;
+}
+
+#logo-div img {
+    width: 100px;
+    height: auto;
+}
+
 h1 {
     margin-bottom: 20px;
 }
