@@ -6,6 +6,25 @@
     transition: all 0.3s ease-in-out;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#logo-div {
+    margin-right: 20px;
+}
+
+#logo-div img {
+    width: 100px;
+    height: auto;
+}
+
+
+
 :root {
     --primary-color: #6C63FF;
     --secondary-color: #FFD700;
